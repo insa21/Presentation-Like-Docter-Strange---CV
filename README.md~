@@ -5,6 +5,7 @@ Aplikasi ini memungkinkan Anda mengontrol presentasi (slide) menggunakan **gestu
 ![Demo GIF](https://via.placeholder.com/800x400?text=Gesture+Control+Demo)  
 *GIF demo akan ditambahkan di sini untuk memberikan gambaran visual.*
 
+---
 
 ## 🌟 Fitur Utama
 
@@ -14,6 +15,7 @@ Aplikasi ini memungkinkan Anda mengontrol presentasi (slide) menggunakan **gestu
 🧹 **Menghapus Anotasi**: Hapus gambar terakhir dengan mengangkat telunjuk, jari tengah, dan jari manis.  
 💾 **Simpan Slide**: Simpan slide yang telah di-annotate ke folder output.
 
+---
 
 ## 💻 Persyaratan Sistem
 
@@ -27,6 +29,7 @@ Sebelum memulai, pastikan Anda memiliki:
    - `mediapipe`
    - `numpy`
 
+---
 
 ## 🚀 Instalasi
 
