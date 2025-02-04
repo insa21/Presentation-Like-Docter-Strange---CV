@@ -1,0 +1,123 @@
+# Gesture-Controlled Presentation System
+
+Aplikasi ini memungkinkan Anda mengontrol presentasi (slide) menggunakan **gestur tangan** yang dideteksi oleh webcam. Anda dapat bernavigasi antar slide, menggambar pada slide, menunjuk objek, dan menyimpan hasil anotasi dengan mudah.
+
+## Fitur Utama
+- **Navigasi Slide**: Pindah ke slide sebelumnya atau berikutnya menggunakan usapan dengan 5 jari.
+- **Menggambar**: Gambar pada slide menggunakan telunjuk.
+- **Pointer**: Tampilkan pointer merah dengan mengangkat telunjuk dan jari tengah.
+- **Menghapus Anotasi**: Hapus gambar terakhir dengan mengangkat telunjuk, jari tengah, dan jari manis.
+- **Simpan Slide**: Simpan slide yang telah di-annotate ke folder output.
+
+---
+
+## Persyaratan Sistem
+1. **Python 3.9+**: Pastikan Python sudah terinstal di sistem Anda.
+2. **Webcam**: Diperlukan webcam untuk mendeteksi gestur tangan.
+3. **Library Python**:
+   - `cvzone`
+   - `opencv-python`
+   - `mediapipe`
+   - `numpy`
+
+---
+
+## Instalasi
+
+### Langkah 1: Clone Repository
+Clone repositori ini ke komputer Anda:
+```bash
+git clone https://github.com/username/gesture-presentation.git
+cd gesture-presentation
+```
+
+### Langkah 2: Buat Environment Virtual (Opsional)
+Disarankan untuk membuat environment virtual agar dependensi tetap terisolasi:
+```bash
+conda create -n presentation_env python=3.9
+conda activate presentation_env
+```
+
+### Langkah 3: Instal Dependensi
+Instal semua library yang diperlukan menggunakan pip:
+```bash
+pip install opencv-python mediapipe cvzone numpy
+```
+
+### Langkah 4: Siapkan Folder Presentasi
+1. Buat folder bernama `presentation` di direktori proyek.
+2. Masukkan file gambar (misalnya, `slide1.jpg`, `slide2.jpg`) ke dalam folder tersebut. Pastikan nama file diurutkan berdasarkan urutan presentasi.
+
+---
+
+## Penggunaan
+
+### Menjalankan Aplikasi
+Jalankan skrip Python menggunakan perintah berikut:
+```bash
+python presentation.py
+```
+
+### Menggunakan Gestur Tangan
+1. **Navigasi Slide**:
+   - Angkat **5 jari** Anda di depan webcam.
+   - Gerakkan tangan Anda ke **kiri** untuk pindah ke slide sebelumnya.
+   - Gerakkan tangan Anda ke **kanan** untuk pindah ke slide berikutnya.
+
+2. **Menggambar**:
+   - Gunakan **telunjuk saja** untuk mulai menggambar pada slide.
+   - Pindahkan tangan Anda untuk menggambar garis pada slide.
+
+3. **Pointer**:
+   - Gunakan **telunjuk dan jari tengah** untuk menampilkan pointer merah pada slide.
+
+4. **Menghapus Gambar Terakhir**:
+   - Gunakan **telunjuk, jari tengah, dan jari manis** untuk menghapus gambar terakhir yang Anda buat.
+
+5. **Simpan Slide**:
+   - Tekan tombol **'s'** pada keyboard untuk menyimpan slide yang telah di-annotate ke folder `output`.
+
+6. **Keluar dari Program**:
+   - Tekan tombol **'q'** pada keyboard untuk keluar dari program.
+
+---
+
+## Struktur Direktori
+```
+gesture-presentation/
+├── presentation/          # Folder untuk menyimpan file slide (gambar).
+├── output/                # Folder untuk menyimpan slide yang telah di-annotate.
+├── presentation.py        # Skrip utama aplikasi.
+├── README.md              # Dokumentasi proyek.
+└── requirements.txt       # Daftar dependensi Python.
+```
+
+---
+
+## Troubleshooting
+
+### 1. Webcam Tidak Terdeteksi
+- Pastikan webcam Anda berfungsi dengan baik.
+- Jika Anda menggunakan IP camera, sesuaikan alamat URL dalam kode.
+
+### 2. Error DLL Load Failed
+- Instal [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+- Pastikan versi Python dan library `mediapipe` kompatibel.
+
+### 3. Slide Tidak Muncul
+- Pastikan folder `presentation` berisi file gambar dengan format yang didukung (misalnya, `.jpg`, `.png`).
+- Periksa apakah nama file diurutkan dengan benar.
+
+---
+
+## Kontribusi
+Kontribusi sangat diterima! Jika Anda ingin menambahkan fitur baru atau memperbaiki bug, silakan buat pull request atau laporkan masalah melalui issue tracker.
+
+---
+
+## Lisensi
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+
+---
+
+Dengan `README.md` ini, pengguna akan memiliki panduan yang jelas tentang cara menginstal, menjalankan, dan menggunakan aplikasi Anda. Jika Anda ingin menambahkan informasi tambahan, seperti contoh video atau tangkapan layar, Anda juga bisa melakukannya untuk memperjelas cara kerja aplikasi. 😊
