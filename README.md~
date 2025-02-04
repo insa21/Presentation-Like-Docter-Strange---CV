@@ -1,6 +1,3 @@
-Berikut adalah kode khusus untuk file `README.md` yang dapat Anda salin dan gunakan langsung. File ini mencakup semua elemen visual seperti emoji, daftar fitur dengan ikon, dan penjelasan interaktif.
-
-markdown
 # 🎉 Gesture-Controlled Presentation System 🎉
 
 Aplikasi ini memungkinkan Anda mengontrol presentasi (slide) menggunakan **gestur tangan** yang dideteksi oleh webcam. Dengan teknologi **Computer Vision**, Anda dapat bernavigasi antar slide, menggambar, menunjuk objek, dan menyimpan hasil anotasi hanya dengan gerakan tangan! ✋➡️
